@@ -1,4 +1,5 @@
 :call plug#begin('~/.vim/plugged')
+:Plug 'xavierd/clang_complete'
 :Plug 'Vimjas/vim-python-pep8-indent'
 :Plug 'ajmwagar/vim-deus'
 :Plug 'arcticicestudio/nord-vim'
@@ -92,10 +93,14 @@ highlight Structure cterm=italic gui=italic
 highlight Typedef cterm=italic gui=italic
 
 "" Autocomplete - mucomplete
+set noinfercase
 let g:mucomplete#completion_delay = 1  " Kicks in only when you pause typing
 set completeopt+=longest,menuone,noinsert
 set completeopt-=preview
-let g:mucomplete#enable_auto_at_startup = 1
+let g:jedi#popup_on_dot = 1
+let g:clang_library_path = '/usr/local/opt/llvm/lib/libclang.dylib'
+let g:clang_complete_auto = 1
+"let g:mucomplete#enable_auto_at_startup = 1
 imap <> <up> <plug>(MUcompleteBwd)
 
 " MAPPINGS
@@ -112,13 +117,15 @@ nnoremap <leader>7 :TagbarToggle<CR>
 autocmd FileType python map <leader>8 :call flake8#Flake8()<CR>
 " " Setting absolute numbered lines
 nnoremap <leader>n :setl rnu!<CR>
+" " Autocomplete
+nnoremap <leader>a :MUcompleteAutoToggle<CR>
 
 "    P    Y    T    H    O    N     "
 
 " PEP8 Indentation
 let g:python_pep8_indent_hang_closing = 1
 
-" Syntastic
+" " Syntastic
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -131,11 +138,11 @@ let python_hightlight_all = 1
 
 
 
-""""""""""""""""""""""""""""""""""""
-"                                  "
-"      C   O   N   F   I   G       "
-"                                  "
-""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""
+"                                 "
+"     C   O   N   F   I   G       "
+"                                 "
+"""""""""""""""""""""""""""""""""""
 
 
 
