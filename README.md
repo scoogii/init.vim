@@ -1,2 +1,2 @@
 # init.vim
-Neovim config file
+Vim & Nvim Config File (same stuff in both)
