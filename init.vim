@@ -21,6 +21,12 @@ let mapleader = ","
 
 
 
+" If there are uinstalled plugins, install automatically
+autocmd VimEnter *
+  \  if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
+  \|   PlugInstall | q
+  \| endif
+
 source $HOME/.config/nvim/plug-config/plugs.vim
 source $HOME/.config/nvim/plug-config/airline.vim
 source $HOME/.config/nvim/plug-config/coc.vim
