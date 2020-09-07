@@ -1,0 +1,16 @@
+{
+  // autoformat
+  "coc.preferences.formatOnSaveFiletypes": [
+    "c",
+    "json",
+    "python"
+  ],
+  "coc.preferences.hoverTarget": "float",
+
+  // Python config
+  "python.linting.enabled": true,
+
+  // C
+  "clangd.enabled": true,
+  "clangd.path": "/Users/ChristianHomeFolder/.config/coc/extensions/coc-clangd-data/install/10.0.0/clangd_10.0.0/bin/clangd"
+}

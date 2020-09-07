@@ -5,25 +5,28 @@
 :Plug 'christoomey/vim-sort-motion' " gs2j, gsip, gsi(
 :Plug 'christoomey/vim-titlecase' " gti', gtap, gT (curr line), gt in V-mode
 :Plug 'davidhalter/jedi'
+:Plug 'jiangmiao/auto-pairs'
 :Plug 'joshdick/onedark.vim'
 :Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+:Plug 'junegunn/gv.vim' "GV(!, ?)
+:Plug 'junegunn/rainbow_parentheses.vim'
 :Plug 'majutsushi/tagbar'
+:Plug 'mhinz/vim-signify'
 :Plug 'neoclide/coc.nvim', {'branch': 'release'}
 :Plug 'norcalli/nvim-colorizer.lua'
 :Plug 'nvie/vim-flake8'
 :Plug 'preservim/nerdcommenter'
-:Plug 'preservim/nerdtree'
+:Plug 'preservim/nerdtree' |
+            \ Plug 'Xuyuanp/nerdtree-git-plugin'
 :Plug 'romainl/vim-cool'
 :Plug 'ryanoasis/vim-devicons'
 :Plug 'scrooloose/syntastic'
 :Plug 'tpope/vim-commentary' " gcc, gcap
+:Plug 'tpope/vim-fugitive' " :Git add, commit, push, pull, diff, log, blame
+:Plug 'tpope/vim-rhubarb' " GBrowse, GRemove, Gdiffsplit
 :Plug 'tpope/vim-surround' " cs'{ , ds' ...
 :Plug 'vim-airline/vim-airline'
 :Plug 'vim-airline/vim-airline-themes'
-:Plug 'junegunn/rainbow_parentheses.vim'
-:Plug 'jiangmiao/auto-pairs'
-:Plug 'mhinz/vim-signify'
-:Plug 'tpope/vim-fugitive' " :Git add, commit, push, pull, diff, log, blame
-:Plug 'tpope/vim-rhubarb' " GBrowse, GRemove, Gdiffsplit
-:Plug 'junegunn/gv.vim' "GV(!, ?)
+:Plug 'mhinz/vim-startify'
+:Plug 'sheerun/vim-polyglot'
 :call plug#end()

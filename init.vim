@@ -1,11 +1,10 @@
+".__         .__   __              .__
+"|__|  ____  |__|_/  |_     ___  __|__|  _____
+"|  | /    \ |  |\   __\    \  \/ /|  | /     \
+"|  ||   |  \|  | |  |       \   / |  ||  Y Y  \
+"|__||___|  /|__| |__|   /\   \_/  |__||__|_|  /
+"         \/             \/                  \/
 
-"▄█    ▄   ▄█    ▄▄▄▄▀        ▄   ▄█ █▀▄▀█
-"██     █  ██ ▀▀▀ █            █  ██ █ █ █
-"██ ██   █ ██     █       █     █ ██ █ ▄ █
-"▐█ █ █  █ ▐█    █         █    █ ▐█ █   █
-" ▐ █  █ █  ▐   ▀      ██   █  █   ▐    █
-"   █   ██                   █▐        ▀
-"                            ▐
 
 " Leader Mapping
 let mapleader = ","
@@ -23,15 +22,17 @@ let mapleader = ","
 
 " If there are uinstalled plugins, install automatically
 autocmd VimEnter *
-  \  if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
-  \|   PlugInstall | q
+  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \|   PlugInstall --sync | q
   \| endif
 
 source $HOME/.config/nvim/plug-config/plugs.vim
+source $HOME/.config/nvim/themes/onedark.vim
 source $HOME/.config/nvim/plug-config/airline.vim
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/signify.vim
+source $HOME/.config/nvim/plug-config/nerdtree_git.vim
 source $HOME/.config/nvim/plug-config/python_syntax.vim
 lua require'colorizer'.setup()
 
@@ -48,38 +49,6 @@ filetype plugin on
 
 
 
-" Colour Scheme & Theme
-" " Ignore colourscheme's background
-autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE
-" " Syntax highlighting
-syntax enable
-" " Colour Scheme
-colorscheme onedark
-" " Enable Italics
-let &t_ZH="\e[3m"
-let &t_ZR="\e[23m"
-" " Keywords
-" " C & Python
-highlight Comment cterm=italic gui=italic
-highlight Constant cterm=italic gui=italic
-highlight Special cterm=italic gui=italic
-highlight Identifier cterm=italic gui=italic
-highlight Type cterm=italic gui=italic
-highlight String cterm=italic gui=italic
-highlight Character cterm=italic gui=italic
-highlight Number cterm=italic gui=italic
-highlight Boolean cterm=italic gui=italic
-highlight Float cterm=italic gui=italic
-highlight Function cterm=italic gui=italic
-highlight Conditional cterm=italic gui=italic
-highlight Repeat cterm=italic gui=italic
-highlight Operator cterm=italic gui=italic
-highlight Keyword cterm=italic gui=italic
-highlight Include cterm=italic gui=italic
-highlight Define cterm=italic gui=italic
-highlight Structure cterm=italic gui=italic
-highlight Typedef cterm=italic gui=italic
-
 " MAPPINGS
 " " FZF
 nnoremap <leader>F :FZF<CR>
@@ -94,6 +63,11 @@ nnoremap <leader>7 :TagbarToggle<CR>
 autocmd FileType python map <leader>8 :call flake8#Flake8()<CR>
 " " Setting absolute numbered lines
 nnoremap <leader>n :setl rnu!<CR>
+" " Easy caps
+inoremap <c-u> <ESC>viwUi
+nnoremap <c-u> viwU<ESC>
+" " Easy save
+nnoremap <C-s> :w<CR>
 
 " Same text files
 set fileformat=unix
@@ -127,7 +101,7 @@ set clipboard+=unnamed
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 " " Autocommenting
-autocmd BufNewFile,BufRead * setlocal formatoptions-=ro
+autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
 
 " Indent/Unindent with tab/shift-tab
 nmap <Tab> >>
