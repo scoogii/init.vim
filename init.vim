@@ -1,3 +1,8 @@
+" ____ ____ ____ ____ ____ ____ ____ ____
+"||i |||n |||i |||t |||. |||v |||i |||m ||
+"||__|||__|||__|||__|||__|||__|||__|||__||
+"|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
+
 :call plug#begin('~/.vim/plugged')
 :Plug 'Vimjas/vim-python-pep8-indent'
 :Plug 'ajmwagar/vim-deus'
@@ -28,6 +33,19 @@
 :Plug 'junegunn/gv.vim' "GV(!, ?)
 :call plug#end()
 
+" Leader Mapping
+let mapleader = ","
+
+
+"     ____  __            _
+"   / __ \/ /_  ______ _(_)___  _____
+"  / /_/ / / / / / __ `/ / __ \/ ___/
+" / ____/ / /_/ / /_/ / / / / (__  )
+"/_/   /_/\__,_/\__, /_/_/ /_/____/
+"              /____/
+
+
+filetype plugin on
 
 source $HOME/.config/nvim/plug-config/coc.vim
 lua require'colorizer'.setup()
@@ -37,17 +55,6 @@ source $HOME/.config/nvim/plug-config/signify.vim
 " Ignore colourscheme's background
 autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE
 
-" Leader Mapping
-let mapleader = ","
-
-""""""""""""""""""""""""""""""""""""
-"                                  "
-"    P   L   U   G   I   N   S     "
-"                                  "
-""""""""""""""""""""""""""""""""""""
-
-filetype plugin on
-
 " " Clang_complete (C Autocomplete)
 let g:clang_library_path = '/usr/local/opt/llvm/lib/libclang.dylib'
 let g:clang_complete_auto = 1
@@ -55,31 +62,11 @@ let g:clang_complete_auto = 1
 " Colour Scheme & Theme
 " " Syntax highlighting
 syntax enable
-" " Enable 256 colours
-set t_Co=256
-set t_ut=
-"set termguicolors
-
 " " Colour Scheme
 colorscheme onedark
 let g:onedark_terminal_italics=1
 let g:airline_powerline_fonts=1
 let g:airline_theme='onedark'
-
-" " Rainbow Parenthesis - xterm 256 colors to choose diff colours
-let g:rainbow_active = 1
-let g:rainbow_conf = {
-\	'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick', 'seagreen3'],
-\	'ctermfgs': ['lightyellow', 'lightmagenta', '69', 'lightcyan', 'grey'],
-\	'guis': [''],
-\	'cterms': [''],
-\	'operators': '_,_',
-\	'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
-\	'separately': {
-\		'*': {},
-\   }
-\}
-
 " " Enable Italics
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
@@ -119,11 +106,13 @@ nnoremap <leader>7 :TagbarToggle<CR>
 autocmd FileType python map <leader>8 :call flake8#Flake8()<CR>
 " " Setting absolute numbered lines
 nnoremap <leader>n :setl rnu!<CR>
-" " Autocomplete
-nnoremap <leader>a :MUcompleteAutoToggle<CR>
 
 
-"    P    Y    T    H    O    N     "
+" ____  _  _  ____  _  _   __   __ _
+"(  _ \( \/ )(_  _)/ )( \ /  \ (  ( \
+" ) __/ )  /   )(  ) __ ((  O )/    /
+"(__)  (__/   (__) \_)(_/ \__/ \_)__)
+
 
 " PEP8 Indentation
 let g:python_pep8_indent_hang_closing = 1
@@ -141,11 +130,12 @@ let python_hightlight_all = 1
 
 
 
-"""""""""""""""""""""""""""""""""""
-"                                 "
-"     C   O   N   F   I   G       "
-"                                 "
-"""""""""""""""""""""""""""""""""""
+"   ______            _____
+"  / ____/___  ____  / __(_)___ _
+" / /   / __ \/ __ \/ /_/ / __ `/
+"/ /___/ /_/ / / / / __/ / /_/ /
+"\____/\____/_/ /_/_/ /_/\__, /
+"                       /____/
 
 
 
