@@ -1,5 +1,4 @@
 :call plug#begin('~/.vim/plugged')
-:Plug 'xavierd/clang_complete'
 :Plug 'Vimjas/vim-python-pep8-indent'
 :Plug 'ajmwagar/vim-deus'
 :Plug 'arcticicestudio/nord-vim'
@@ -8,23 +7,32 @@
 :Plug 'davidhalter/jedi'
 :Plug 'joshdick/onedark.vim'
 :Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-:Plug 'lifepillar/vim-mucomplete'
-:Plug 'luochen1990/rainbow'
 :Plug 'majutsushi/tagbar'
+:Plug 'neoclide/coc.nvim', {'branch': 'release'}
+:Plug 'norcalli/nvim-colorizer.lua'
 :Plug 'nvie/vim-flake8'
 :Plug 'preservim/nerdcommenter'
 :Plug 'preservim/nerdtree'
 :Plug 'romainl/vim-cool'
 :Plug 'ryanoasis/vim-devicons'
 :Plug 'scrooloose/syntastic'
-:Plug 'tpope/vim-commentary' "gcc, gcap
-:Plug 'tpope/vim-repeat'
+:Plug 'tpope/vim-commentary' " gcc, gcap
 :Plug 'tpope/vim-surround' " cs'{ , ds' ...
 :Plug 'vim-airline/vim-airline'
 :Plug 'vim-airline/vim-airline-themes'
+:Plug 'junegunn/rainbow_parentheses.vim'
+:Plug 'jiangmiao/auto-pairs'
+:Plug 'mhinz/vim-signify'
+:Plug 'tpope/vim-fugitive' " :Git add, commit, push, pull, diff, log, blame
+:Plug 'tpope/vim-rhubarb' " GBrowse, GRemove, Gdiffsplit
+:Plug 'junegunn/gv.vim' "GV(!, ?)
 :call plug#end()
 
 
+source $HOME/.config/nvim/plug-config/coc.vim
+lua require'colorizer'.setup()
+source $HOME/.config/nvim/plug-config/rainbow.vim
+source $HOME/.config/nvim/plug-config/signify.vim
 
 " Ignore colourscheme's background
 autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE
@@ -40,12 +48,17 @@ let mapleader = ","
 
 filetype plugin on
 
+" " Clang_complete (C Autocomplete)
+let g:clang_library_path = '/usr/local/opt/llvm/lib/libclang.dylib'
+let g:clang_complete_auto = 1
+
 " Colour Scheme & Theme
 " " Syntax highlighting
 syntax enable
 " " Enable 256 colours
 set t_Co=256
 set t_ut=
+"set termguicolors
 
 " " Colour Scheme
 colorscheme onedark
@@ -92,17 +105,6 @@ highlight Define cterm=italic gui=italic
 highlight Structure cterm=italic gui=italic
 highlight Typedef cterm=italic gui=italic
 
-"" Autocomplete - mucomplete
-set noinfercase
-let g:mucomplete#completion_delay = 1  " Kicks in only when you pause typing
-set completeopt+=longest,menuone,noinsert
-set completeopt-=preview
-let g:jedi#popup_on_dot = 1
-let g:clang_library_path = '/usr/local/opt/llvm/lib/libclang.dylib'
-let g:clang_complete_auto = 1
-"let g:mucomplete#enable_auto_at_startup = 1
-imap <> <up> <plug>(MUcompleteBwd)
-
 " MAPPINGS
 " " FZF
 nnoremap <leader>F :FZF<CR>
@@ -119,6 +121,7 @@ autocmd FileType python map <leader>8 :call flake8#Flake8()<CR>
 nnoremap <leader>n :setl rnu!<CR>
 " " Autocomplete
 nnoremap <leader>a :MUcompleteAutoToggle<CR>
+
 
 "    P    Y    T    H    O    N     "
 
@@ -199,7 +202,7 @@ set hlsearch
 "set colorcolumn=100
 set splitbelow
 set splitright
-highlight LineNr ctermfg=244
+highlight LineNr ctermfg=238
 highlight CursorLineNr ctermfg=white
 " " Split Navigations
 nnoremap <C-J> <C-W><C-J>
