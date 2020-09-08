@@ -13,9 +13,9 @@ autocmd FileType python map <leader>8 :call flake8#Flake8()<CR>
 " " Setting absolute numbered lines
 nnoremap <leader>n :setl rnu!<CR>
 " " Easy caps
-inoremap <c-u> <ESC>viwUi
-nnoremap <c-u> viwU<ESC>
+inoremap <leader>c <ESC>viwUi
+nnoremap <leader>c viwU<ESC>
 " " Easy save
 nnoremap <C-s> :w<CR>
-" " Ranger
-nnoremap <leader>R :Ranger<CR>
+" " RipGrep
+nnoremap <leader>rg :Rg<CR>
