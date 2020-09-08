@@ -15,5 +15,5 @@ set statusline+=%*
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_wq = 0
 
-" Flake8
+" Flake8 & Polyglot
 let g:python_hightlight_all = 1
