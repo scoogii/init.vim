@@ -1,9 +1,12 @@
-".__         .__   __              .__
-"|__|  ____  |__|_/  |_     ___  __|__|  _____
-"|  | /    \ |  |\   __\    \  \/ /|  | /     \
-"|  ||   |  \|  | |  |       \   / |  ||  Y Y  \
-"|__||___|  /|__| |__|   /\   \_/  |__||__|_|  /
-"         \/             \/                  \/
+ " /$$   /$$                                /$$
+ "| $$$ | $$                               |__/
+ "| $$$$| $$  /$$$$$$   /$$$$$$  /$$    /$$ /$$ /$$$$$$/$$$$
+ "| $$ $$ $$ /$$__  $$ /$$__  $$|  $$  /$$/| $$| $$_  $$_  $$
+ "| $$  $$$$| $$$$$$$$| $$  \ $$ \  $$/$$/ | $$| $$ \ $$ \ $$
+ "| $$\  $$$| $$_____/| $$  | $$  \  $$$/  | $$| $$ | $$ | $$
+ "| $$ \  $$|  $$$$$$$|  $$$$$$/   \  $/   | $$| $$ | $$ | $$
+ "|__/  \__/ \_______/ \______/     \_/    |__/|__/ |__/ |__/
+
 
 
 " Leader Mapping
@@ -33,6 +36,9 @@ source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/nerdtree_git.vim
+source $HOME/.config/nvim/plug-config/fzf.vim
+source $HOME/.config/nvim/plug-config/ranger.vim
+source $HOME/.config/nvim/plug-config/start-screen.vim
 source $HOME/.config/nvim/plug-config/python_syntax.vim
 lua require'colorizer'.setup()
 
@@ -68,6 +74,8 @@ inoremap <c-u> <ESC>viwUi
 nnoremap <c-u> viwU<ESC>
 " " Easy save
 nnoremap <C-s> :w<CR>
+" " Ranger
+nnoremap <leader>R :Ranger<CR>
 
 " Same text files
 set fileformat=unix

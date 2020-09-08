@@ -1,2 +1,3 @@
-# init.vim
-Neovim Config File 
+# Christian's Neovim configuration
+
+This is my Neovim configuration file :D
