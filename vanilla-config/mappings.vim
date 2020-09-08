@@ -1,6 +1,6 @@
 " MAPPINGS
 " " FZF
-nnoremap <leader>F :FZF<CR>
+nnoremap <leader>F :Files<CR>
 " " Syntastic
 nnoremap <leader>S :SyntasticCheck<CR>
 " " NERDTree
