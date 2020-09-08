@@ -32,7 +32,6 @@ source $HOME/.config/nvim/themes/onedark.vim
 source $HOME/.config/nvim/plug-config/airline.vim
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
-source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/nerdtree_git.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/ranger.vim

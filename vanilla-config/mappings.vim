@@ -19,3 +19,5 @@ nnoremap <leader>c viwU<ESC>
 nnoremap <C-s> :w<CR>
 " " RipGrep
 nnoremap <leader>rg :Rg<CR>
+" " GitGutter
+nnoremap <leader>G :GitGutterLineHighlightsToggle<CR>
