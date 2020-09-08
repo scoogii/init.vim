@@ -1,3 +1,3 @@
 # Christian's Neovim configuration
 
-This is my Neovim configuration file :D
+This is my Neovim configuration file :smiley:
