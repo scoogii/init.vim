@@ -1,4 +1,6 @@
 " MAPPINGS
+" Leader Mapping
+let mapleader = ","
 " " FZF
 nnoremap <leader>F :Files<CR>
 " " Syntastic

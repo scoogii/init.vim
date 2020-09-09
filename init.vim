@@ -18,8 +18,6 @@
 "              /____/
 
 
-" Leader Mapping
-let mapleader = ","
 
 " If there are uinstalled plugins, install automatically
 autocmd VimEnter *
