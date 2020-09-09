@@ -19,7 +19,7 @@
 
 
 
-" If there are uinstalled plugins, install automatically
+" If there are uninstalled plugins, install automatically
 autocmd VimEnter *
   \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \|   PlugInstall --sync | q
