@@ -23,3 +23,7 @@ nnoremap <C-s> :w<CR>
 nnoremap <leader>rg :Rg<CR>
 " " GitGutter
 nnoremap <leader>G :GitGutterLineHighlightsToggle<CR>
+" " Running python in editor
+autocmd FileType python map <buffer> <F8> :w<CR>:exec '!python %' shellescape(@%, 1)<CR>
+autocmd FileType python imap <buffer> <F8> :w<CR>:exec '!python %' shellescape(@%, 1)<CR>
+
