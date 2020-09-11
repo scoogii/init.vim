@@ -4,6 +4,7 @@ let mapleader = ","
 " " FZF
 nnoremap <leader>F :Files<CR>
 " " Syntastic
+nnoremap <leader>s :SyntasticToggle<CR>
 nnoremap <leader>S :SyntasticCheck<CR>
 " " NERDTree
 nnoremap <leader>5 :NERDTreeToggle<CR>
