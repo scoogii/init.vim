@@ -1,3 +1,6 @@
+" Statusline integration
+set statusline^=%{coc#status()}
+
 " Set termguicolors
 set termguicolors
 

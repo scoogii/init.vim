@@ -8,6 +8,7 @@
   "coc.preferences.hoverTarget": "float",
   // Python config
   "python.linting.enabled": true,
+  "python.jediEnabled": false,
   "python.formatting.provider": "black",
   // C
   "clangd.enabled": true,
