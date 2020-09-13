@@ -29,6 +29,7 @@ Plug 'tpope/vim-commentary' " gcc, gcap
 Plug 'tpope/vim-fugitive' "  Git add, commit, push, pull, diff, log, blame
 Plug 'tpope/vim-rhubarb' " GBrowse, GMove, GRemove, Gdiffsplit - enabled by fugitive
 Plug 'tpope/vim-surround' " cs'{ , ds' ...
+Plug 'tpope/vim-repeat'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 call plug#end()
