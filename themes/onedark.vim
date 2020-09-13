@@ -29,4 +29,3 @@ highlight Include cterm=italic gui=italic
 highlight Define cterm=italic gui=italic
 highlight Structure cterm=italic gui=italic
 highlight Typedef cterm=italic gui=italic
-

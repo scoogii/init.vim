@@ -2,7 +2,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'airblade/vim-gitgutter' " [c, c], <leader>h(p/s/u) to deal with hunks
 Plug 'ajmwagar/vim-deus'
-Plug 'arcticicestudio/nord-vim'
 Plug 'christoomey/vim-sort-motion' " gs2j, gsip, gsi(
 Plug 'christoomey/vim-titlecase' " gti', gtap, gT (curr line), gt in V-mode
 Plug 'davidhalter/jedi'
