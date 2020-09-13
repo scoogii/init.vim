@@ -2,5 +2,4 @@
 
 This is my Neovim configuration file :smiley:
 
-_Also this configuration style (the way I sorted my folders/files) is greatly inspired by the nvim
-config of @ChristianChiarulli_
+_Configuration style inspired by Chris@Machine / @ChristianChiarulli_
