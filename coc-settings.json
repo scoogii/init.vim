@@ -6,6 +6,10 @@
     "python"
   ],
   "coc.preferences.hoverTarget": "float",
+  "signature.preferShownAbove": false,
+  "signature.hideOnTextChange": true,
+  "signature.maxWindowHeight": 50,
+  "signature.enable": true,
   // Python config
   "python.linting.enabled": true,
   "python.jediEnabled": false,
