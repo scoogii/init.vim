@@ -8,13 +8,12 @@
   "coc.preferences.hoverTarget": "float",
   "signature.preferShownAbove": false,
   "signature.hideOnTextChange": true,
-  "signature.maxWindowHeight": 50,
+  "signature.maxWindowHeight": 30,
   "signature.enable": true,
   // Python config
   "python.linting.enabled": true,
   "python.jediEnabled": false,
   "python.formatting.provider": "black",
   // C
-  "clangd.enabled": true,
-  "clangd.path": "/Users/ChristianHomeFolder/.config/coc/extensions/coc-clangd-data/install/10.0.0/clangd_10.0.0/bin/clangd"
+  "clangd.enabled": false
 }

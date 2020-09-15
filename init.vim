@@ -35,7 +35,6 @@ source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/ranger.vim
 source $HOME/.config/nvim/plug-config/start-screen.vim
 source $HOME/.config/nvim/plug-config/python_syntax.vim
-source $HOME/.config/nvim/plug-config/indent.vim
 lua require'colorizer'.setup()
 
 filetype plugin on

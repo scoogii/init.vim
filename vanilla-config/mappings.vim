@@ -20,6 +20,9 @@ inoremap <leader>C <ESC>viwUi
 nnoremap <leader>C viwU<ESC>
 " " Easy save
 nnoremap <C-s> :w<CR>
+" " Shift lines in visual mode
+xnoremap ] :m-2<CR>gv=gv
+xnoremap [ :m'>+<CR>gv=gv
 " " RipGrep
 nnoremap <leader>rg :Rg<CR>
 " " GitGutter
