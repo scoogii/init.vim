@@ -27,8 +27,8 @@ set number relativenumber
 set clipboard+=unnamed
 
 " " Flagging Unnecessary Whitespace
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
+"highlight ExtraWhitespace ctermbg=red guibg=red
+"match ExtraWhitespace /\s\+$/
 
 " " Autocommenting
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
@@ -46,3 +46,4 @@ hi CursorLine gui=underline cterm=underline
 set cursorline
 set scrolloff=1
 set hlsearch
+set smartcase

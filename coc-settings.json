@@ -15,5 +15,6 @@
   "python.jediEnabled": false,
   "python.formatting.provider": "black",
   // C
-  "clangd.enabled": false
+  "clangd.enabled": true,
+  "clangd.path": "/usr/local/opt/llvm/bin/clangd"
 }
