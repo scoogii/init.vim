@@ -46,4 +46,5 @@ hi CursorLine gui=underline cterm=underline
 set cursorline
 set scrolloff=1
 set hlsearch
+set ignorecase
 set smartcase
