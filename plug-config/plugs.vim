@@ -1,5 +1,4 @@
 call plug#begin('~/.vim/plugged')
-"Plug 'aurieh/discord.nvim', {'do': ':UpdateRemotePlugins'}
 Plug 'hugolgst/vimsence'
 Plug 'unblevable/quick-scope'
 Plug 'Vimjas/vim-python-pep8-indent'
