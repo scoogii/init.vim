@@ -1,5 +1,4 @@
 call plug#begin('~/.vim/plugged')
-Plug 'hugolgst/vimsence'
 Plug 'unblevable/quick-scope'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'airblade/vim-gitgutter' " [c, c], <leader>h(p/s/u) to deal with hunks

@@ -5,7 +5,7 @@
 
 
 " PEP8 Indentation
-let g:python_pep8_indent_hang_closing = 1
+let g:python_pep8_indent_hang_closing = 0
 
 " " Syntastic
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
