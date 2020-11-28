@@ -4,8 +4,7 @@ Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'airblade/vim-gitgutter' " [c, c], <leader>h(p/s/u) to deal with hunks
 Plug 'ajmwagar/vim-deus'
 Plug 'christoomey/vim-sort-motion' " gs2j, gsip, gsi(
-Plug 'christoomey/vim-titlecase' " gti', gtap, gT (curr line), gt in V-mode
-Plug 'davidhalter/jedi'
+Plug 'christoomey/vim-titlecase' " gti', gtap, gT (curr line), gt in V-mode Plug 'davidhalter/jedi'
 Plug 'francoiscabrol/ranger.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'joshdick/onedark.vim'
@@ -32,4 +31,6 @@ Plug 'tpope/vim-surround' " cs'{ , ds' ...
 Plug 'tpope/vim-repeat'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'arcticicestudio/nord-vim'
+Plug 'ghifarit53/tokyonight-vim'
 call plug#end()

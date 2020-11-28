@@ -15,7 +15,7 @@ nnoremap <leader>7 :TagbarToggle<CR>
 autocmd FileType python map <leader>8 :call flake8#Flake8()<CR>
 " " Setting absolute numbered lines
 nnoremap <leader>n :setl rnu!<CR>
-" " Easy caps
+" " Easy caps - viw + u/U in visual mode also
 inoremap <leader>C <ESC>viwUi
 nnoremap <leader>C viwU<ESC>
 " " Easy save

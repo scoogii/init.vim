@@ -11,8 +11,7 @@ set shiftround
 " " .html and .css indentation
 au BufNewFile,BufRead *.js, *.html, *.css
     \ set tabstop=2
-    \ set softtabstop=2
-    \ set shiftwidth=2
+    \ set softtabstop=2 \ set shiftwidth=2
 
 " " Text Width
 set textwidth=100
@@ -41,9 +40,10 @@ filetype indent on
 
 " Mouse, Cursor, Scrolling & Searching
 set mouse=a
-hi clear Cursorline
-hi CursorLine gui=underline cterm=underline
 set cursorline
+hi clear CursorLine
+hi clear CursorLineNR
+hi CursorLine gui=underline cterm=underline
 set scrolloff=1
 set hlsearch
 set ignorecase

@@ -26,7 +26,7 @@ autocmd VimEnter *
   \| endif
 
 source $HOME/.config/nvim/plug-config/plugs.vim
-source $HOME/.config/nvim/themes/onedark.vim
+source $HOME/.config/nvim/themes/theme.vim
 source $HOME/.config/nvim/plug-config/airline.vim
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
