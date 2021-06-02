@@ -32,4 +32,3 @@ nnoremap <leader>G :GitGutterLineHighlightsToggle<CR>
 "autocmd FileType python imap <buffer> <F8> :w<CR>:exec '!python3 %' shellescape(@%, 1)<CR>
 autocmd FileType python map <leader>0 :w<CR>:exec '!python3 %' shellescape(@%, 1)<CR>
 autocmd FileType python imap <leader>0 :w<CR>:exec '!python3 %' shellescape(@%, 1)<CR>
-
