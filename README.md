@@ -1,2 +1,1 @@
-# Christian's Neovim configuration
-:smiley:
+# Neovim configuration
