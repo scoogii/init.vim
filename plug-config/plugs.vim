@@ -10,6 +10,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'joshdick/onedark.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-rooter'
 Plug 'junegunn/gv.vim' "GV(!, ?)
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'majutsushi/tagbar'
