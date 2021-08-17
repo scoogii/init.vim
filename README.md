@@ -2,7 +2,6 @@
 
 When setting up on new machine, some dependencies required:
 - Nvim w/ Python upport
-- Nvim nightly (?)
 - Vim-Plug
 - LLVM
 - Ruby/Gem
