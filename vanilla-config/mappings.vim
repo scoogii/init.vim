@@ -2,7 +2,9 @@
 " Leader Mapping
 let mapleader = ","
 " " FZF
-nnoremap <leader>p :Files<CR>
+nnoremap <leader>f :Files<CR>
+" " Ranger
+nmap <leader>r :RnvimrToggle<CR>
 " " Syntastic
 nnoremap <leader>s :SyntasticToggle<CR>
 nnoremap <leader>S :SyntasticCheck<CR>

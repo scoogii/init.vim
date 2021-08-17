@@ -3,7 +3,8 @@
     "coc.preferences.formatOnSaveFiletypes": [
         "c",
         "json",
-        "python"
+        "python",
+        "java"
     ],
     "coc.preferences.hoverTarget": "float",
     "signature.preferShownAbove": false,
