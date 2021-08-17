@@ -53,3 +53,4 @@ source $HOME/.config/nvim/vanilla-config/mappings.vim
 source $HOME/.config/nvim/vanilla-config/editing.vim
 source $HOME/.config/nvim/vanilla-config/formatting.vim
 source $HOME/.config/nvim/vanilla-config/interface.vim
+" Hi
