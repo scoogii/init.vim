@@ -13,8 +13,11 @@
     "signature.enable": true,
     // Python config
     "python.linting.enabled": true,
-    "python.jediEnabled": false,
+    //"python.linting.pylintArgs": ["--extension-pkg-whitelist=numpy"]
+    "python.jediEnabled": true,
     "python.formatting.provider": "none",
+    "python.pythonPath": "/usr/local/bin/python3.9",
+    "suggest.timeout": 5000,
     // C
     "clangd.enabled": true,
     "clangd.path": "/Users/christian/.config/coc/extensions/coc-clangd-data/install/12.0.1/clangd_12.0.1/bin/clangd"
