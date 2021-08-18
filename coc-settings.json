@@ -13,8 +13,7 @@
     "signature.enable": true,
     // Python config
     "python.linting.enabled": true,
-    //"python.linting.pylintArgs": ["--extension-pkg-whitelist=numpy"]
-    "python.jediEnabled": true,
+    "python.jediEnabled": false,
     "python.formatting.provider": "none",
     "python.pythonPath": "/usr/local/bin/python3.9",
     "suggest.timeout": 5000,
