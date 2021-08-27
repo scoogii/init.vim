@@ -35,4 +35,5 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'arcticicestudio/nord-vim'
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'mattn/emmet-vim'
+Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
 call plug#end()
