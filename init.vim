@@ -25,6 +25,9 @@ autocmd VimEnter *
   \|   PlugInstall --sync | q
   \| endif
 
+" For HTML files
+autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+
 source $HOME/.config/nvim/plug-config/plugs.vim
 source $HOME/.config/nvim/themes/theme.vim
 source $HOME/.config/nvim/plug-config/airline.vim
