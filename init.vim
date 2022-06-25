@@ -39,7 +39,15 @@ source $HOME/.config/nvim/plug-config/ranger.vim
 source $HOME/.config/nvim/plug-config/start-screen.vim
 source $HOME/.config/nvim/plug-config/python_syntax.vim
 source $HOME/.config/nvim/plug-config/quick_scope.vim
+source $HOME/.config/nvim/plug-config/bufferline.vim
 lua require'colorizer'.setup()
+lua require'nvim-web-devicons'.setup()
+
+" Bufferline
+set termguicolors
+lua << EOF
+require("bufferline").setup{}
+EOF
 
 filetype plugin on
 
