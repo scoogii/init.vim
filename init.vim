@@ -40,6 +40,7 @@ source $HOME/.config/nvim/plug-config/start-screen.vim
 source $HOME/.config/nvim/plug-config/python_syntax.vim
 source $HOME/.config/nvim/plug-config/quick_scope.vim
 source $HOME/.config/nvim/plug-config/bufferline.vim
+source $HOME/.config/nvim/plug-config/blamer.vim
 lua require'colorizer'.setup()
 lua require'nvim-web-devicons'.setup()
 

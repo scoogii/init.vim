@@ -38,4 +38,5 @@ Plug 'mattn/emmet-vim'
 Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
 Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+Plug 'APZelos/blamer.nvim' " BlamerToggle
 call plug#end()
