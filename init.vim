@@ -44,6 +44,7 @@ source $HOME/.config/nvim/plug-config/blamer.vim
 lua require'colorizer'.setup()
 lua require'nvim-web-devicons'.setup()
 lua require'lualine'.setup()
+lua require'lualine'.get_config()
 
 " Bufferline
 set termguicolors
