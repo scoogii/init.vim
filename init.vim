@@ -30,7 +30,6 @@ autocmd BufRead,BufNewFile *.htm,*.html, *.css setlocal tabstop=2 shiftwidth=2 s
 
 source $HOME/.config/nvim/plug-config/plugs.vim
 source $HOME/.config/nvim/themes/theme.vim
-"source $HOME/.config/nvim/plug-config/airline.vim
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/nerdtree_git.vim
@@ -44,7 +43,6 @@ source $HOME/.config/nvim/plug-config/blamer.vim
 lua require'colorizer'.setup()
 lua require'nvim-web-devicons'.setup()
 lua require'lualine'.setup()
-lua require'lualine'.get_config()
 
 " Bufferline
 set termguicolors
