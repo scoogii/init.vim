@@ -6,7 +6,6 @@ Plug 'ajmwagar/vim-deus'
 Plug 'christoomey/vim-sort-motion' " gs2j, gsip, gsi(
 Plug 'christoomey/vim-titlecase' " gti', gtap, gT (curr line), gt in V-mode Plug 'davidhalter/jedi'
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
-Plug 'jiangmiao/auto-pairs'
 Plug 'joshdick/onedark.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
