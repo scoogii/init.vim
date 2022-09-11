@@ -26,7 +26,7 @@ autocmd VimEnter *
   \| endif
 
 " For HTML files
-autocmd BufRead,BufNewFile *.htm,*.html, *.css setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
 source $HOME/.config/nvim/plug-config/plugs.vim
 source $HOME/.config/nvim/themes/theme.vim

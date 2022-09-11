@@ -36,3 +36,6 @@ autocmd FileType python map <leader>0 :w<CR>:exec '!python3 %' shellescape(@%, 1
 autocmd FileType python imap <leader>0 :w<CR>:exec '!python3 %' shellescape(@%, 1)<CR>
 " " Bracey
 nnoremap <leader>b :Bracey<CR>
+
+" " New Coc Autocomplete
+inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"
