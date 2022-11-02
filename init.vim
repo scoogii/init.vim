@@ -25,8 +25,9 @@ autocmd VimEnter *
   \|   PlugInstall --sync | q
   \| endif
 
-" For HTML files
+" For HTML/CSS files
 autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType css setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
 source $HOME/.config/nvim/plug-config/plugs.vim
 source $HOME/.config/nvim/themes/theme.vim

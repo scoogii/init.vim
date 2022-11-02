@@ -15,7 +15,8 @@ syntax enable
 
 "colorscheme tokyonight
 "colorscheme one-monokai
-colorscheme onedark
+"colorscheme onedark
+colorscheme nordfox
 
 " " Colour Scheme
 set termguicolors
