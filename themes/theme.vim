@@ -13,6 +13,10 @@ syntax enable
 "let g:tokyonight_transparent_sidebar = 'true'
 "let g:tokyonight_dark_sidebar = 'true'
 
+"let g:oceanic_italic_comments = 1
+"let g:oceanic_bold = 1
+"let g:oceanic_for_polyglot = 1
+
 "colorscheme tokyonight
 "colorscheme one-monokai
 "colorscheme onedark

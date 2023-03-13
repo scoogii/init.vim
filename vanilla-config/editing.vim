@@ -8,10 +8,9 @@ set softtabstop=4
 set shiftwidth=4
 set shiftround
 
-" " .html and .css indentation
-"au BufNewFile,BufRead *.html, *.css
-    "\ set tabstop=2
-    "\ set softtabstop=2 \ set shiftwidth=2
+" " JS indentation
+autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2
+autocmd FileType javascriptreact setlocal shiftwidth=2 softtabstop=2
 
 " " Text Width
 set textwidth=100

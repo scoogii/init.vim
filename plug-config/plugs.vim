@@ -37,4 +37,6 @@ Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'APZelos/blamer.nvim' " BlamerToggle
 Plug 'EdenEast/nightfox.nvim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' } " Markdown Preview
+Plug 'manzeloth/live-server'
 call plug#end()

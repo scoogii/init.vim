@@ -25,6 +25,12 @@
     "suggest.timeout": 5000,
     // C
     "clangd.enabled": true,
-    "clangd.path": "/Users/christian/.config/coc/extensions/coc-clangd-data/install/12.0.1/clangd_12.0.1/bin/clangd"
+    "clangd.path": "/Users/christian/.config/coc/extensions/coc-clangd-data/install/12.0.1/clangd_12.0.1/bin/clangd",
+    // Javascript
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+    "javascript.preferences.quoteStyle": "single",
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "javascript.suggest.autoImports": true,
+    "typescript.suggest.autoImports": true
 }
 
