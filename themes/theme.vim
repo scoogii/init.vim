@@ -30,7 +30,7 @@ let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
 " " Keywords
 " " C & Python
-"highlight Comment cterm=italic gui=italic
+highlight Comment cterm=italic gui=italic
 "highlight Constant cterm=italic gui=italic
 "highlight Special cterm=italic gui=italic
 "highlight Identifier cterm=italic gui=italic
@@ -38,7 +38,7 @@ let &t_ZR="\e[23m"
 highlight String cterm=italic gui=italic
 "highlight Character cterm=italic gui=italic
 "highlight Number cterm=italic gui=italic
-"highlight Boolean cterm=italic gui=italic
+highlight Boolean cterm=italic gui=italic
 "highlight Float cterm=italic gui=italic
 "highlight Function cterm=italic gui=italic
 "highlight Condiional cterm=italic gui=italic
