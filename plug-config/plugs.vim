@@ -30,7 +30,7 @@ Plug 'tpope/vim-rhubarb' " GBrowse, GMove, GRemove, Gdiffsplit - enabled by fugi
 Plug 'tpope/vim-surround' " cs'{ , ds' ...
 Plug 'tpope/vim-repeat'
 Plug 'nvim-lualine/lualine.nvim'
-Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'ghifarit53/tokyonight-vim'
 Plug 'mattn/emmet-vim'
 Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
 Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
