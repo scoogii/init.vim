@@ -18,6 +18,10 @@ set textwidth=100
 " " Backspacing
 set backspace=indent,eol,start
 
+" " Dotted leading spaces
+set list
+set listchars=trail:•
+
 " " Numbering lines
 set number relativenumber
 
