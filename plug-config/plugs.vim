@@ -39,4 +39,5 @@ Plug 'APZelos/blamer.nvim' " BlamerToggle
 Plug 'EdenEast/nightfox.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' } " Markdown Preview
 Plug 'manzeloth/live-server'
+Plug 'lukas-reineke/indent-blankline.nvim'
 call plug#end()
