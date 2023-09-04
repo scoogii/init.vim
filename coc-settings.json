@@ -18,10 +18,7 @@
     "signature.maxWindowHeight": 30,
     "signature.enable": true,
     // Python config
-    "python.linting.enabled": true,
-    //"python.jediEnabled": false,
-    "python.formatting.provider": "none",
-    "python.pythonPath": "/usr/local/bin/python3.9",
+    "pylsp.plugins.pylint.enabled": false,
     "suggest.timeout": 5000,
     // C
     "clangd.enabled": true,
